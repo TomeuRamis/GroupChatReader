@@ -69,3 +69,12 @@ la funcion de recalcular recorre las checkboxes y mira una por una si están che
 para recorrer las checkboxes igual necesito una id que dependa del nombre del miembro al que referencia
 
 
+        out.write("    // ------------- DEFINICIÓN DE VARIABLES --------------\n")
+        out.write("    nombrechat = \""+chatname+"\";\n")
+        out.write("    datamiembros = "+datamensajes+";\n")
+        out.write("    datahoras = "+datahoras+";\n")
+        out.write("    traduccionstickers = "+json.dumps(codedstickers)+";\n")
+        out.write("    datastickers = "+json.dumps(lstickers)+";\n")
+        out.write("    datapalabras = "+json.dumps(lwords)+";\n")
+        out.write("    dataletras = "+dataletras+";\n")
+        out.write("    // --------------------- SCRIPTS ----------------------\n")
