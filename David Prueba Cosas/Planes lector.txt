@@ -1,0 +1,71 @@
+Notas lector
+
+Main (info sobre mensajes)
+Cantidad total de mensajes
+Cantidad total de mensajes de cada persona
+porcentaje de mensajes que pertenece a cada persona
+distribución de los mensajes desde la creación del grupo
+distribución de los mensajes desde la creación del grupo por persona
+distribución de los mensajes por hora del dia
+
+
+Pestaña de palabras.
+Cantidad de palabras distintas
+cantidad de cada palabra total
+cantidad de cada palabra por persona
+filtro por longitud de palabra
+quizá añadir palabras a un grafico de barras para poder comparar visualmente
+
+Pestaña de stickers
+Cantidad de cada sticker total
+Cantidad de cada sticker por persona
+
+
+Conversion de html a prints:
+leer linea
+reemplazar " por \"
+escribir: print("+linealeida+")
+
+[
+	{
+	image: 1 (tener un array de conversión de stickers)
+	cant: 30
+	}
+]
+
+
+extraer indice (nombre de archivo):
+mirar indice del '(' (si no existe devolver 0)
+mirar indice del ')'
+coger texto entre ambos y parsear a int
+
+NO FUNCIONA, HAY STICKERS Y ANIMATEDSTICKERS
+
+los stickers irán antes y los animated despues, de alguna forma.
+
+
+procedimiento:
+hacer 2 listas, una de stickers y otra de stickers animados
+guardar los stickers tal que:
+[
+	{
+	image: 1 (tener un array de conversión de stickers)
+	animated: true/false
+	cant: 30
+	}
+]
+guardar longitud de la lista de stickers normales
+añadir los stickers animados al final de la lista de stickers normales
+eliminar lista de stickers animados
+recorrer todas las listas y actualizar las referencias a stickers animados sumando la longitud de la lista
+a la vez eliminar el campo animated
+codificar stickers
+
+
+crear las checkboxes con appends desde el javascript recorriendo la lista de miembros
+poner a cada checkbox como valor el nombre del miembro al que corresponde y todas con una clase comun
+al pulsar cualquier elemento con esa clase se recalculan los datos de la tabla y la gráfica
+la funcion de recalcular recorre las checkboxes y mira una por una si están checked
+para recorrer las checkboxes igual necesito una id que dependa del nombre del miembro al que referencia
+
+
